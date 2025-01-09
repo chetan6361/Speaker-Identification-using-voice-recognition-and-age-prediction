@@ -6,10 +6,10 @@ Note: The actual training data for speaker identification (trainingData) and age
 
 Python 3.12.2
 
-librosa                 0.10.2.post1
-scikit-learn            1.4.1.post1
-joblib                  1.3.2
-Flask                   3.0.3
-python_speech_features  0.6
-scipy                   1.12.0
+librosa                 0.10.2.post1  
+scikit-learn            1.4.1.post1  
+joblib                  1.3.2  
+Flask                   3.0.3  
+python_speech_features  0.6  
+scipy                   1.12.0  
 
