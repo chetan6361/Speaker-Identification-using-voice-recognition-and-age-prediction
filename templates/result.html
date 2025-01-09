@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        height: 100vh; /* Ensure the body takes full viewport height */
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: 60px; /* Ensure the content starts below the header */
+      }
+      h2 {
+        color: #666;
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.1em;
+        color: #555;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      a {
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Person Identification Using Voice Recognition</h1>
+    </header>
+    <main>
+      <h2>Results</h2>
+      <p><strong>Detected Speaker:</strong> {{ speaker }}</p>
+      <p><strong>Predicted Age Class:</strong> {{ age }}</p>
+      <a href="{{ url_for('index') }}">Upload another audio file</a>
+    </main>
+  </body>
+</html>
