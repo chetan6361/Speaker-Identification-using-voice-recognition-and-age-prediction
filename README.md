@@ -5,3 +5,11 @@ This study focuses on developing a voice recognition system that accurately iden
 Note: The actual training data for speaker identification (trainingData) and age prediction (cv-valid-test) are not fully uploaded because of the file size.
 
 Python 3.12.2
+
+librosa                 0.10.2.post1
+scikit-learn            1.4.1.post1
+joblib                  1.3.2
+Flask                   3.0.3
+python_speech_features  0.6
+scipy                   1.12.0
+
